@@ -1,0 +1,11 @@
+{
+  "name": "Mgames Web",
+  "short_name": "MGAMES",
+  "description": "GAME STATION",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#317EFB"
+}
