@@ -2,7 +2,7 @@
   "name": "Mgames Web",
   "short_name": "MGAMES",
   "description": "GAME STATION",
-  "start_url": "/",
+  "start_url": "/MGAMES/",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
