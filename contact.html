@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Merlion Game Station</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      color: #fff;
+      font-family: poppins;
+      background-image: url('img/bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      position: relative;
+      z-index: 1;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(10, 10, 10, 0.75);
+      z-index: -1;
+    }
+
+    .navbar {
+      background: linear-gradient(to right, #000000, #1f1f1f);
+      box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2);
+    }
+
+    .navbar-brand span {
+      font-size: 20px;
+      color: #00ffee;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .nav-link {
+      color: #ccc !important;
+      font-weight: 500px;
+      margin-left: 3px;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: #00ffee !important;
+      text-shadow: 0 0 10px #00ffee;
+    }
+    .contact-section {
+      padding: 80px 0 40px;
+      text-align: center;
+    }
+
+    .contact-section h1 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+      color: #ffffff;
+      text-shadow: 0 0 5px #00ffee, 0 0 10px #00ffee;
+      animation: glow 3s ease-in-out infinite alternate;
+    }
+    p{
+      margin-top: 5px;      
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #0ff, 0 0 20px #0ff; }
+      to { text-shadow: 0 0 20px #0ff, 0 0 40px #0ff; }
+    }
+
+    .contact-info {
+      margin-bottom: 40px;
+    }
+
+    .contact-info i {
+      font-size: 2rem;
+      color: #00ffee;
+      margin-bottom: 10px;
+    }
+
+    .contact-form {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: #fff;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #ccc;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      border: none;
+      box-shadow: 0 0 5px #00ffee;
+    }
+
+    .btn-custom {
+      background-color: #00ffee;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      padding: 10px 20px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #00cccc;
+      color: #000;
+    }
+/* map container*/
+    .map-container {
+      margin-top: 50px;
+      border: 2px solid #00ffee;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+      position: relative;
+      z-index: 1;
+    }
+    
+
+    footer {
+      margin-top: 40px;
+    }
+
+    
+    
+
+    @media (max-width: 768px) {
+      .contact-section h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container d-flex justify-content-between align-items-center">
+    <a class="navbar-brand d-flex align-items-center" href="#home">
+      <img src="img/logo.png" alt="Logo" width="60" height="60" class="me-2" style="margin-left:10px">
+        <span style="font-family: game of squids;">Merlion Game Station</span>
+    </a>
+
+    <div class="d-flex">
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item px-2"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item px-2"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item px-2"><a class="nav-link" href="game.html">Games</a></li>
+        <li class="nav-item px-2"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item px-2"><a class="nav-link" href="snacks.html">Snacks & beverages</a></li>
+        <li class="nav-item px-2"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Contact Section -->
+<section class="contact-section">
+  <div class="container" class="margin">
+    <h1>Contact Us</h1>
+     <div class="row contact-info text-center">
+      <div class="col-md-4 mb-4">
+        <a href="https://wa.me/9751511113" target="_blank" class="text-white mx-2">
+        <img src="img/whatsapp.png" alt="whatsapp" height="50px" width="50px">
+      </a>
+        
+        <p>whatsapp</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="https://www.facebook.com/share/1E9HBFnRc1/" class="text-white mx-2" target="_blank" style="text-decoration: none;">
+        <img src="img/fb.png" alt="facebook" height="50px" width="50px">
+      </a>
+        <p>Facebook</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href=" https://www.instagram.com/merlion_game_station?igsh=bXc2dWtscThsbjNj" class="text-white mx-2" target="_blank" style="text-decoration: none;">
+        <img src="img/insta.png" alt="instagram" height="50px" width="50px">
+      </a>
+        <p>instagram</p>
+         
+      </div>
+    </div>
+    <!-- Contact Info -->
+    <div class="row contact-info text-center">
+      <div class="col-md-4 mb-4">
+        <a href="https://maps.app.goo.gl/QN9zJgoSTaMR1puf8" target="_blank">
+          <i class="bi bi-geo-alt-fill"></i>
+        </a>
+        
+        <p>Mettur Main Road, Near Mettur Railway Gate,</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="tel:9585069933">
+          <i class="bi bi-telephone-fill"></i>
+        </a>
+        <p>+91 9585069933</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="mailto:claghssmcvenkatash@gmail.com" target="_blank">
+          <i class="bi bi-envelope-fill"></i>
+        </a>
+        <p>merliongame@gmail.com</p>
+         
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <form>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Phone Number" required>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-custom">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Google Map -->
+    <div class="map-container mt-5">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.337936132251!2d78.03070877339388!3d11.741226140660917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf9237aa6d8f5%3A0x2fd2f9e5b9048b3!2sMerlion%20Game%20Station%20-%20Game%20Center%20Omalur!5e0!3m2!1sen!2sin!4v1745821891472!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white pt-5 pb-3" style="margin-top: 20px;">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- Quick Links -->
+      <div class="col-md-3 mb-3">
+        <h5 style="color: yellow;">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Services</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-3 mb-3">
+        <h5 style="color: yellow;">Contact</h5>
+        <p class="mb-1">Mettur Main Road, Near Mettur Railway Gate, Omalur</p>
+        <p class="mb-1"></p>
+        <a href="tel:9585069933"  target="_blank" style="text-decoration: none; color: #fff;">Phone: +91 9585069933</a>
+        <p ><a href="mailto:merliongame@gmail.com" style="text-decoration: none; color: #fff;">Email:merliongame@gmail.com</a></p>
+      </div>
+
+      
+      <!-- Legal Info -->
+      <div class="col-md-3 mb-3">
+        <h5 style="color: yellow;">Legal</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Terms of Service</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <!-- time -->
+      <div class="col-md-3 mb-3">
+        <h5 style="color: yellow; margin-left: 15px;">Opening Time </h5>
+        <div class="text-center text-white mt-3">
+          <p >🕒 Daily: 09:00 AM - 10:00 PM</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="text-center mt-3">
+      <a href="https://www.facebook.com/share/1E9HBFnRc1/" class="text-white mx-2" target="_blank" style="text-decoration: none;">
+        <img src="img/fb.png" alt="insta" height="24px" width="24px">
+      </a>
+      <a href=" https://www.instagram.com/merlion_game_station?igsh=bXc2dWtscThsbjNj" class="text-white mx-2" target="_blank" style="text-decoration: none;">
+        <img src="img/insta.png" alt="insta" height="24px" width="24px">
+      </a>
+      <a href="https://wa.me/9751511113" target="_blank" class="text-white mx-2">
+        <img src="img/whatsapp.png" alt="insta" height="24px" width="24px">
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center mt-3 border-top pt-3">
+      &copy; 2025 Merlion Game Station. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

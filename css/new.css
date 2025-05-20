@@ -1,0 +1,14 @@
+
+.red{ 
+   color:red;
+   background-color: blue;
+   padding: 50px;
+   margin-top: 200px;
+}
+.head{
+   font-family: poppins;
+   color: rgb(0, 0, 0);
+   background-color: antiquewhite;
+   margin-left: 50px;
+}
+
