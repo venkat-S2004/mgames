@@ -2,6 +2,7 @@ const CACHE_NAME = "zentry-cache-v1";
 const urlsToCache = [
   "/",
   "/index.html",
+  "/footer.html",
   "/about.html",
   "/beverages.html",
   "/cold.html",
