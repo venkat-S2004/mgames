@@ -166,55 +166,79 @@
   </section>
 
   <!-- Footer -->
-<footer class="bg-dark text-white pt-5 pb-3 mt-4">
+<footer class="bg-dark text-white pt-5 pb-3" style="margin-top: 20px;">
+  <style>
+    /* Mobile view font size adjustments */
+    @media (max-width: 767px) {
+      footer {
+        font-size: 14px;
+      }
+
+      footer h5 {
+        font-size: 16px;
+      }
+
+      footer p,
+      footer a,
+      footer li {
+        font-size: 14px;
+        text-align: left !important;
+      }
+
+      .text-center.text-md-start {
+        text-align: left !important;
+      }
+    }
+  </style>
+
   <div class="container">
-    <div class="row text-md-start text-center">
-      
+    <div class="row text-center text-md-start">
       <!-- Quick Links -->
       <div class="col-md-3 mb-3">
-        <h5 class="text-warning text-md-start text-center">Quick Links</h5>
-        <ul class="list-unstyled text-md-start text-center">
-          <li><a href="index.html" class="text-white text-decoration-none d-block">Home</a></li>
-          <li><a href="about.html" class="text-white text-decoration-none d-block">About Us</a></li>
-          <li><a href="snacks.html" class="text-white text-decoration-none d-block">Snacks & Beverages</a></li>
-          <li><a href="contact.html" class="text-white text-decoration-none d-block">Contact</a></li>
+        <h5 style="color: yellow;">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="snacks.html" class="text-white text-decoration-none">Snacks & Beverages</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
         </ul>
       </div>
 
       <!-- Contact Info -->
       <div class="col-md-3 mb-3">
-        <h5 class="text-warning text-md-start text-center">Contact</h5>
-        <p class="mb-1 text-md-start text-center">Mettur Main Road, Near Mettur Railway Gate, Omalur</p>
-        <p class="mb-1 text-md-start text-center">Phone: +91 9585069933</p>
-        <p class="text-md-start text-center">Email: merliongame@gmail.com</p>
+        <h5 style="color: yellow;">Contact</h5>
+        <p class="mb-1">Mettur Main Road, Near Mettur Railway Gate, Omalur</p>
+        <p class="mb-1">Phone: +91 9585069933</p>
+        <p>Email: merliongame@gmail.com</p>
       </div>
 
       <!-- Legal Info -->
       <div class="col-md-3 mb-3">
-        <h5 class="text-warning text-md-start text-center">Legal</h5>
-        <ul class="list-unstyled text-md-start text-center">
-          <li><a href="#" class="text-white text-decoration-none d-block">Terms of Service</a></li>
-          <li><a href="#" class="text-white text-decoration-none d-block">Privacy Policy</a></li>
+        <h5 style="color: yellow;">Legal</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Terms of Service</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
         </ul>
       </div>
 
       <!-- Opening Time -->
       <div class="col-md-3 mb-3">
-        <h5 class="text-warning text-md-start text-center">Opening Time</h5>
-        <p class="mt-3 text-md-start text-center">🕒 Daily: 09:00 AM - 10:00 PM</p>
+        <h5 style="color: yellow; margin-left: 15px;">Opening Time</h5>
+        <div class="text-center text-white mt-3">
+          <p>🕒 Daily: 09:00 AM - 10:00 PM</p>
+        </div>
       </div>
-
     </div>
 
     <!-- Social Media Icons -->
     <div class="text-center mt-3">
-      <a href="https://www.facebook.com/share/1E9HBFnRc1/" class="text-white mx-2" target="_blank">
+      <a href="https://www.facebook.com/share/1E9HBFnRc1/" class="text-white mx-2" target="_blank" style="text-decoration: none;">
         <img src="img/fb.png" alt="facebook" height="24px" width="24px">
       </a>
-      <a href="https://www.instagram.com/merlion_game_station?igsh=bXc2dWtscThsbjNj" class="text-white mx-2" target="_blank">
+      <a href="https://www.instagram.com/merlion_game_station?igsh=bXc2dWtscThsbjNj" class="text-white mx-2" target="_blank" style="text-decoration: none;">
         <img src="img/insta.png" alt="instagram" height="24px" width="24px">
       </a>
-      <a href="https://wa.me/9751511113" class="text-white mx-2" target="_blank">
+      <a href="https://wa.me/9751511113" target="_blank" class="text-white mx-2">
         <img src="img/whatsapp.png" alt="whatsapp" height="24px" width="24px">
       </a>
     </div>
@@ -225,6 +249,7 @@
     </div>
   </div>
 </footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
